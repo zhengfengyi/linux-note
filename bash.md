@@ -49,3 +49,8 @@
     -v ：反向選擇，亦即顯示出沒有 '搜尋字串' 內容的那一行！
     --color=auto ：可以將找到的關鍵字部分加上顏色的顯示喔！
     ```
+
+1. unlimit ： unlimit -a (列出所有限制)
+2. 命令别名设置： alias  example： alias rm="rm -i"   取消别名： unalias rm
+3. 历史命令： history ； 执行上一条命令：【 !! 】;  执行最近以“al”开头的命令 【!al】
+4. bash的环境设定档：/etc/profile => ~/.bash_profile || => ~/.bash_login => ~/.profile;
