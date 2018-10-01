@@ -53,3 +53,31 @@ last -n 5 | awk '{print $1 "\t lines:" NR "\t columns:" NF}'
 | NF       | 每一行 ($0) 擁有的欄位總數        |
 | NR       | 目前 awk 所處理的是『第幾行』資料 |
 | FS       | 目前的分隔字元，預設是空白鍵      |
+
+#### 5.diff
+
+用法：  diff [-bBi] from-file to-file
+
+```
+-b  ：忽略一行當中，僅有多個空白的差異(例如 "about me" 與 "about     me" 視為相同
+-B  ：忽略空白行的差異。
+-i  ：忽略大小寫的不同。
+```
+
+#### 6.cmp
+
+```
+cmp [-l] file1 file2
+```
+
+#### 7.patch 更新
+
+```go
+ diff -Naur passwd.old passwd.new > passwd.patch
+```
+
+#### 8.檔案列印準備： pr
+
+```
+pr /etc/man_db.conf
+```
